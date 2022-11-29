@@ -5,7 +5,7 @@ A library of utility types used across Digitevent repositories.
 ## Installation
 
 ```sh
-npm i @digitevent/type-lib
+npm i @digitevent-org/type-lib
 ```
 
 ## Development
