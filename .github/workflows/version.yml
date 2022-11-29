@@ -1,0 +1,36 @@
+name: Bump package version
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  bump-version:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Previous package version
+        run: cat package.json | grep version
+
+      - name: Automated version bump
+        id: bump
+        uses: phips28/gh-action-bump-version@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag-prefix: 'v'
+
+      - name: New package version
+        run: cat package.json | grep version
+
+      - name: New tag
+        env:
+          NEW_TAG: ${{ steps.bump.outputs.newTag }}
+        run: echo "new tag $NEW_TAG"
