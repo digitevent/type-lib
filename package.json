@@ -1,5 +1,5 @@
 {
-  "name": "type-lib",
+  "name": "@digitevent-org/type-lib",
   "version": "1.0.1",
   "description": "A library of utility types used across Digitevent repositories.",
   "main": "dist/index.js",
