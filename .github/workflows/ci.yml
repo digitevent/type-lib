@@ -24,8 +24,9 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      - name: Test
-        run: npm run test
-
       - name: Build
         run: npm run build
+
+      # Test step includes testing the types declaration produced at build step.
+      - name: Test
+        run: npm run test

@@ -12,9 +12,10 @@
     "build": "tsc",
     "lint": "eslint src --ext .ts",
     "lint:fix": "eslint src --ext .ts --fix",
-    "test": "jest",
+    "test": "jest && npm run test:types",
     "test:watch": "jest --watch --coverage",
-    "test:cov": "jest --coverage"
+    "test:cov": "jest --coverage",
+    "test:types": "npx tsd --files src/**/*test-d.ts"
   },
   "repository": {
     "type": "git",
@@ -41,6 +42,7 @@
     "jest": "^29.3.1",
     "prettier": "^2.7.1",
     "ts-jest": "^29.0.3",
+    "tsd": "^0.25.0",
     "typescript": "^4.8.4"
   }
 }
