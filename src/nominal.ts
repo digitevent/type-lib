@@ -15,7 +15,7 @@ interface Brand<T, B extends string> {
  * [permalink](https://github.com/microsoft/TypeScript-Website/blob/da25328eb3ec6e1b2a0ff67b4f9595295f96a38c/packages/playground-examples/copy/en/TypeScript/Language%20Extensions/Nominal%20Typing.ts).
  * @example
  * ```ts
- * import { Nominal, nominal } from '@digitevent-org/type-lib'
+ * import { Nominal, nominal } from '@digitevent/type-lib'
  *
  * type MyString = Nominal<string, 'MyString'>
  * const newMyString = (v: string) => nominal<MyString>(v)
@@ -42,7 +42,7 @@ type Unbrand<T> = T extends Flavor<infer X, any> ? X : T
  * Create a nominal type from a base type.
  * @example
  * ```ts
- * import { Nominal, nominal } from '@digitevent-org/type-lib'
+ * import { Nominal, nominal } from '@digitevent/type-lib'
  *
  * type MyString = Nominal<string, 'MyString'>
  * const newMyString = (v: string) => nominal<MyString>(v)

@@ -1,5 +1,5 @@
 {
-  "name": "@digitevent-org/type-lib",
+  "name": "@digitevent/type-lib",
   "version": "1.1.1",
   "description": "A library of utility types used across Digitevent repositories.",
   "main": "dist/index.js",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:digitevent-org/type-lib.git"
+    "url": "git@github.com:digitevent/type-lib.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
@@ -27,9 +27,9 @@
   "author": "Digitevent",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/digitevent-org/type-lib/issues"
+    "url": "https://github.com/digitevent/type-lib/issues"
   },
-  "homepage": "https://github.com/digitevent-org/type-lib#readme",
+  "homepage": "https://github.com/digitevent/type-lib#readme",
   "devDependencies": {
     "@types/jest": "^29.2.2",
     "@typescript-eslint/eslint-plugin": "^5.42.1",

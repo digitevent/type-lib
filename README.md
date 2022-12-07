@@ -5,7 +5,7 @@ A library of utility types used across Digitevent repositories.
 ## Installation
 
 ```sh
-npm i @digitevent-org/type-lib
+npm i @digitevent/type-lib
 ```
 
 ## Development
@@ -36,7 +36,7 @@ The package is published to GitHub Packages' npm registry.
 
 The steps for building and publishing the package are automated inside our CD (see [`.github/workflows/publish.yml`](.github/workflows/publish.yml)).
 
-Starting this process requires a human action. Simply go to the [releases page](https://github.com/digitevent-org/type-lib/releases) and create a new release from the latest tag. The workflow will then be triggered automatically.
+Starting this process requires a human action. Simply go to the [releases page](https://github.com/digitevent/type-lib/releases) and create a new release from the latest tag. The workflow will then be triggered automatically.
 
 ### Workflow
 
@@ -64,7 +64,7 @@ We declare the registry in `package.json`:
 {
   "repository": {
     "type": "git",
-    "url": "git@github.com:digitevent-org/type-lib.git"
+    "url": "git@github.com:digitevent/type-lib.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
